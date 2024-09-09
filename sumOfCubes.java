@@ -15,6 +15,7 @@ public class sumOfCubes
         {
             double digit = num % (Math.pow(10,pow));
             total = total + Math.pow(digit / (Math.pow(10, pow-1)),3);
+            System.out.println("Digit " + digit / (Math.pow(10, pow-1)));
             System.out.println("Change " + total);
             pow++;
             num = num - digit;
